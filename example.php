@@ -29,7 +29,6 @@
           new Bootstrap\Pagination([
             'page' => $i,
             'pages' => 20,
-            'length' => 5,
             'show' => true
           ]);
         }

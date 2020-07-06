@@ -104,7 +104,7 @@ class Pagination
         if ($this->getParams('page') < 1) $this->setParams('page','1');
         if ($this->getParams('page') > $this->getParams('pages')) $this->setParams('page',$this->getParams('pages'));
         if ($this->getParams('length') < 3) $this->setParams('length','3');
-        if ($this->getParams('length')%2 === 0) $this->setParams('length',$this->getParams('length') + 1);
+        if ($this->getParams('length')%2 === 0) $this->setParams('length',(string)($this->getParams('length') + 1));
     }
 
     private function validationTemplates():void{
